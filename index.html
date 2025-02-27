@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jorge - Game Developer Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+    />
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo_icon.png" alt="Logo" class="logo-placeholder" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-resume">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+      <div class="hero-content">
+        <!-- Your Image -->
+        <img src="images/jorge.png" alt="Jorge Lance" class="hero-image" />
+
+        <!-- Hero Text -->
+        <div class="hero-text">
+          <h1>Hi, I'm Jorge</h1>
+          <p class="hero-bio">
+            Passionate Game Developer specializing in game mechanics, AI
+            systems, and UI integration. From bringing the world of WrestleQuest
+            to life with strategic gameplay to crafting realistic mechanics in a
+            sports simulation, I thrive in building immersive and polished
+            experiences. Currently developing an Idle Clicker, where I handle
+            everything from systems design to UI/UX and progression mechanics.
+            Let’s create something amazing together!
+          </p>
+
+          <!-- Call-to-Action Button -->
+          <a href="#projects" class="btn btn-primary hero-btn"
+            >View My Projects</a
+          >
+
+          <!-- Social Media Icons -->
+          <div class="hero-socials">
+            <a
+              href="https://www.linkedin.com/in/jorge-lance-malgapo-b2bb4614a/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/Jorgelance0109" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="mailto:mjorgelance@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+      <h2 class="text-center">EXPLORE MY WORK</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div
+            class="card project-card shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal1"
+          >
+            <div class="project-image">
+              <img
+                src="images/project1.jpg"
+                alt="WrestleQuest"
+                class="card-img-top"
+              />
+              <div class="overlay">
+                <h5 class="project-title">WrestleQuest</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card project-card shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal2"
+          >
+            <div class="project-image">
+              <img
+                src="images/confidential.jpg"
+                alt="Confidential Project"
+                class="card-img-top"
+              />
+              <div class="overlay">
+                <h5 class="project-title">Confidential Project</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card project-card shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal3"
+          >
+            <div class="project-image">
+              <img
+                src="images/ongoing.jpg"
+                alt="Confidential Project"
+                class="card-img-top"
+              />
+              <div class="overlay">
+                <h5 class="project-title">Idle Clicker</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals for Each Project -->
+    <!-- WrestleQuest Modal -->
+    <div
+      class="modal fade"
+      id="projectModal1"
+      tabindex="-1"
+      aria-labelledby="projectModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal1Label">WrestleQuest</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Video Container -->
+            <div class="video-container">
+              <video
+                id="wrestleQuestVideo"
+                class="modal-video"
+                src="videos/wrestlequest.mp4"
+                muted
+                loop
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p>
+              <strong>WrestleQuest</strong> is a unique fusion of turn-based RPG
+              mechanics and professional wrestling, where players rise from
+              rookie to legend in an epic wrestling journey. Featuring strategic
+              battles, legendary arenas, and larger-than-life characters, the
+              game blends nostalgia with modern storytelling.
+            </p>
+            <p>
+              As part of the development team, I contributed to gameplay
+              mechanics, level design, cutscene system and implementation
+              ensuring engaging player progression. With pixel-art visuals,
+              humor, and deep RPG elements, WrestleQuest delivers an authentic
+              pro-wrestling experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div
+      class="modal fade"
+      id="projectModal2"
+      tabindex="-1"
+      aria-labelledby="projectModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal2Label">Confidential</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/confidential.jpg"
+              class="img-fluid rounded mb-3"
+              alt="Project 2"
+            />
+            <p>
+              <strong>Confidential Project</strong> involved the development of
+              complex gameplay mechanics and interactive systems for a sports
+              simulation game. My primary role focused on implementing core
+              gameplay logic (realistic calculations and AI), ensuring smooth
+              mechanical execution, and integrating essential UI elements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div
+      class="modal fade"
+      id="projectModal3"
+      tabindex="-1"
+      aria-labelledby="projectModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal3Label">
+              Milk Tycoon: Idle Clicker
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/ongoing.jpg"
+              class="img-fluid rounded mb-3"
+              alt="Project 3"
+            />
+            <p>
+              <strong>Milk Tycoon: Idle Clicker</strong> is a resource
+              management and incremental simulation game where players build and
+              expand their milk production empire. Designed with engaging idle
+              mechanics, players automate production, manage upgrades, and
+              optimize efficiency to maximize profits.
+            </p>
+
+            <p>
+              I'm handling the entire development process, from game system
+              architecture and UI/UX design to implementing progression
+              mechanics and ensuring a smooth player experience. This includes:
+            </p>
+
+            <ul>
+              <li>
+                Developing a scalable game economy with incremental revenue
+                generation.
+              </li>
+              <li>
+                Designing automated production systems and prestige mechanics
+                for long-term engagement.
+              </li>
+              <li>
+                Creating an intuitive and dynamic UI for seamless player
+                interaction.
+              </li>
+              <li>
+                Optimizing performance and game balancing to ensure a fun,
+                rewarding experience.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container text-center">
+      <h2 class="text-center">TECHNICAL SKILLS</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="skill-card"><h5>Unity (C#) Development</h5></div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card"><h5>Idle Game Mechanics</h5></div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card"><h5>UI/UX Game Design</h5></div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card"><h5>Object-Oriented Programming</h5></div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card"><h5>Save & Load Systems</h5></div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card"><h5>Game Optimization</h5></div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card"><h5>Currency & Resource Management</h5></div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card"><h5>2D/3D Animation & VFX</h5></div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card"><h5>Version Control (Git, GitHub)</h5></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Resume Section -->
+    <section id="contact-resume" class="container">
+      <div class="row">
+        <!-- Contact Section -->
+        <div class="col-md-6">
+          <h2 class="text-center">CONTACT</h2>
+          <form
+            action="https://formspree.io/f/mkgodgwj"
+            method="POST"
+            class="contact-form"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              class="form-control"
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+              class="form-control"
+            ></textarea>
+            <button
+              type="submit"
+              class="btn btn-primary hero-btn"
+              id="send-btn"
+            >
+              <span id="send-text">Send</span>
+              <span
+                id="loading-spinner"
+                class="spinner"
+                style="display: none"
+              ></span>
+            </button>
+          </form>
+          <p class="text-center email-at">
+            Or email me at:
+            <a href="mailto:mjorgelance@gmail.com">mjorgelance@gmail.com</a>
+          </p>
+        </div>
+
+        <!-- Resume Section -->
+        <div class="col-md-6 position-relative">
+          <h2 class="text-center">RESUME</h2>
+
+          <div class="resume-container">
+            <!-- Download Button Overlay -->
+            <a
+              href="https://drive.google.com/uc?export=download&id=1UY9Uw1Vb5j0LQIjqcX-VvbJNqISoyxmO"
+              class="btn resume-download-btn"
+              title="Download Resume"
+              download
+            >
+              <i class="fas fa-download"></i>
+              <!-- Correct Download Icon -->
+            </a>
+
+            <!-- Resume Iframe -->
+            <iframe
+              src="https://drive.google.com/file/d/1UY9Uw1Vb5j0LQIjqcX-VvbJNqISoyxmO/preview"
+              width="100%"
+              height="350px"
+              class="rounded shadow"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Jorge Lance Malgapo. All Rights Reserved.</p>
+        <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/jorge-lance-malgapo-b2bb4614a/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Jorgelance0109" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:mjorgelance@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
