@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadingSpinner = document.getElementById("loading-spinner");
 
   contactForm.addEventListener("submit", async function (event) {
-    event.preventDefault(); // Prevent default submission
+    event.preventDefault(); // Prevent default form submission
 
     // Apply Loading State
     sendBtn.disabled = true;
@@ -119,16 +119,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     if (response.ok) {
-      alert("Message sent successfully! I will get back to you soon.");
-      contactForm.reset();
+      // Show "Sent!" text instead of a pop-up
+      sendText.textContent = "Sent!";
     } else {
-      alert("Oops! Something went wrong. Try again later.");
+      sendText.textContent = "Failed!";
     }
 
-    // Reset Button State
-    sendBtn.disabled = false;
-    sendBtn.classList.remove("loading");
-    sendText.style.display = "inline";
+    // Show the text and hide spinner
     loadingSpinner.style.display = "none";
+    sendText.style.display = "inline";
+
+    // Keep "Sent!" message for 2 seconds, then revert to "Send"
+    setTimeout(() => {
+      sendText.textContent = "Send";
+      sendBtn.disabled = false;
+      sendBtn.classList.remove("loading");
+    }, 2000);
   });
 });
