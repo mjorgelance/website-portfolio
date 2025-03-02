@@ -684,16 +684,17 @@ h2.text-center {
 
   /* Adjust Specific Sections */
   #projects {
+    padding-top: 100px;
     padding-bottom: 50px;
   }
 
   #skills {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
 
   #contact-resume {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
   }
 
@@ -738,9 +739,13 @@ h2.text-center {
 
   /* HERO */
   .hero {
-    height: 80vh; /* Adjust height for mobile */
-    padding: 50px 20px; /* Reduce padding */
-    background-attachment: scroll;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 105px;
   }
 
   .hero::before {
@@ -750,12 +755,12 @@ h2.text-center {
   }
 
   .hero h1 {
-    font-size: 2rem; /* Reduce heading size */
+    font-size: 1.8rem; /* Reduce heading size */
   }
 
   .hero-bio {
     font-size: 1rem; /* Adjust bio text */
-    max-width: 90%; /* Reduce width for better readability */
+    max-width: 85%; /* Reduce width for better readability */
     line-height: 1.5; /* Improve spacing */
   }
 
@@ -772,15 +777,20 @@ h2.text-center {
   .hero-socials a {
     font-size: 1.4rem; /* Slightly smaller icons */
     margin: 0 8px; /* Adjust spacing */
+    margin-top: 15px;
   }
 
   .hero-content {
-    flex-direction: column;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center;
     text-align: center;
+    padding: 20px;
   }
 
   .hero-image {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px; /* Creates slight space */
+    z-index: 2; /* Ensures it stays above the overlay */
   }
 }

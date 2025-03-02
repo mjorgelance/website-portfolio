@@ -2,6 +2,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      // Only close if the menu is open
+      if (navbarCollapse.classList.contains("show")) {
+        navbarToggler.click(); // Simulate a click to close the menu
+      }
+    });
+  });
 
   function highlightNav() {
     let scrollPosition = window.scrollY + 150; // Offset to activate earlier
