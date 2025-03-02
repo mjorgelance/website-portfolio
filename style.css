@@ -678,6 +678,19 @@ h2.text-center {
 
 /* Makes sure the sections stack in mobile view */
 @media (max-width: 768px) {
+  /* Ensure Safe Area Padding for Mobile */
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Fix Navbar Overlap on Notched Phones */
+  .navbar {
+    padding-top: calc(
+      env(safe-area-inset-top, 15px) + 10px
+    ); /* Adds extra spacing */
+  }
+
   section {
     padding: 60px 20px; /* Reduce padding to avoid huge gaps */
   }
@@ -745,7 +758,8 @@ h2.text-center {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 105px;
+    padding-top: calc(env(safe-area-inset-top, 15px) + 85px);
+    padding-bottom: calc(env(safe-area-inset-bottom, 15px) + 5px);
   }
 
   .hero::before {
@@ -792,5 +806,10 @@ h2.text-center {
     height: 130px;
     margin-bottom: 10px; /* Creates slight space */
     z-index: 2; /* Ensures it stays above the overlay */
+  }
+
+  /* Fix Footer Spacing for Safe Area */
+  .footer {
+    padding-bottom: calc(env(safe-area-inset-bottom, 15px) + 20px);
   }
 }
