@@ -104,8 +104,22 @@
             data-bs-target="#projectModal1"
           >
             <div class="project-image">
+              <img src="images/yeka.jpg" alt="YEKA" class="card-img-top" />
+              <div class="overlay">
+                <h5 class="project-title">YEKA</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card project-card shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal2"
+          >
+            <div class="project-image">
               <img
-                src="images/project1.jpg"
+                src="images/wrestlequest/wq.jpg"
                 alt="WrestleQuest"
                 class="card-img-top"
               />
@@ -119,7 +133,7 @@
           <div
             class="card project-card shadow-sm"
             data-bs-toggle="modal"
-            data-bs-target="#projectModal2"
+            data-bs-target="#projectModal3"
           >
             <div class="project-image">
               <img
@@ -137,11 +151,11 @@
           <div
             class="card project-card shadow-sm"
             data-bs-toggle="modal"
-            data-bs-target="#projectModal3"
+            data-bs-target="#projectModal4"
           >
             <div class="project-image">
               <img
-                src="images/ongoing.jpg"
+                src="images/confidential.jpg"
                 alt="Confidential Project"
                 class="card-img-top"
               />
@@ -151,11 +165,29 @@
             </div>
           </div>
         </div>
+        <div class="col-md-4">
+          <div
+            class="card project-card shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal5"
+          >
+            <div class="project-image">
+              <img
+                src="images/songbook-carousel/songbook.jpg"
+                alt="Songbook App"
+                class="card-img-top"
+              />
+              <div class="overlay">
+                <h5 class="project-title">Songbook App</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Modals for Each Project -->
-    <!-- WrestleQuest Modal -->
+    <!-- WordPress Elementor Modal -->
     <div
       class="modal fade"
       id="projectModal1"
@@ -166,7 +198,66 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="projectModal1Label">WrestleQuest</h5>
+            <h5 class="modal-title" id="projectModal1Label">YEKA</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/yeka.jpg"
+              class="img-fluid rounded mb-3"
+              alt="WordPress Elementor"
+            />
+            <p>
+              <strong>YEKA.NL</strong> demonstrates my ability to translate
+              client-specific requirements into a polished, responsive website
+              using WordPress and the Elementor page builder. The design and
+              layout were fully tailored to match the client’s branding, goals,
+              and vision.
+            </p>
+            <ul>
+              <li>
+                Designed and developed a modern, mobile-responsive website using
+                Elementor’s drag-and-drop interface.
+              </li>
+              <li>
+                Customized layouts, sections, and visual elements using HTML/CSS
+                to meet precise design specifications.
+              </li>
+              <li>
+                Integrated interactive forms, subtle animations, and
+                SEO-friendly structures for improved user engagement.
+              </li>
+              <li>
+                Delivered a performance-optimized, accessible site aligned with
+                the client’s business objectives.
+              </li>
+            </ul>
+            <p>
+              This project showcases my strengths in client-focused design,
+              no-code/low-code development, and front-end implementation using
+              WordPress and Elementor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WrestleQuest Modal -->
+    <div
+      class="modal fade"
+      id="projectModal2"
+      tabindex="-1"
+      aria-labelledby="projectModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal2Label">WrestleQuest</h5>
             <button
               type="button"
               class="btn-close"
@@ -257,15 +348,15 @@
     <!-- Project 2 Modal -->
     <div
       class="modal fade"
-      id="projectModal2"
+      id="projectModal3"
       tabindex="-1"
-      aria-labelledby="projectModal2Label"
+      aria-labelledby="projectModal3Label"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="projectModal2Label">Confidential</h5>
+            <h5 class="modal-title" id="projectModal3Label">Confidential</h5>
             <button
               type="button"
               class="btn-close"
@@ -277,7 +368,7 @@
             <img
               src="images/confidential.jpg"
               class="img-fluid rounded mb-3"
-              alt="Project 2"
+              alt="Project 3"
             />
             <p>
               <strong>Confidential Project</strong> involved the development of
@@ -291,18 +382,18 @@
       </div>
     </div>
 
-    <!-- Project 3 Modal -->
+    <!-- Idle Clicker Modal -->
     <div
       class="modal fade"
-      id="projectModal3"
+      id="projectModal4"
       tabindex="-1"
-      aria-labelledby="projectModal3Label"
+      aria-labelledby="projectModal4Label"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="projectModal3Label">Idle Clicker</h5>
+            <h5 class="modal-title" id="projectModal4Label">Idle Clicker</h5>
             <button
               type="button"
               class="btn-close"
@@ -312,9 +403,9 @@
           </div>
           <div class="modal-body">
             <img
-              src="images/ongoing.jpg"
+              src="images/confidential.jpg"
               class="img-fluid rounded mb-3"
-              alt="Project 3"
+              alt="Project 4"
             />
             <p>
               <strong>Idle Clicker</strong> is a resource management and
@@ -368,6 +459,142 @@
               This project showcases my expertise in incremental game design,
               data persistence, monetization strategies, and scalable
               architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Songbook App Modal -->
+    <div
+      class="modal fade"
+      id="projectModal5"
+      tabindex="-1"
+      aria-labelledby="projectModal5Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal5Label">Songbook App</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Carousel with animation -->
+            <div
+              id="songbookCarousel"
+              class="carousel slide carousel-fade mb-3"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/songbook-carousel/songbook1.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Songbook Screenshot 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/songbook-carousel/songbook2.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Songbook Screenshot 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/songbook-carousel/songbook3.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Songbook Screenshot 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/songbook-carousel/songbook4.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Songbook Screenshot 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/songbook-carousel/songbook5.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Songbook Screenshot 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/songbook-carousel/songbook6.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Songbook Screenshot 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/songbook-carousel/songbook7.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Songbook Screenshot 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#songbookCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#songbookCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+
+            <!-- Description -->
+            <p>
+              <strong>Songbook App</strong> is a dynamic tool built for
+              musicians, worship leaders, and music teams. It includes rich
+              chord-based functionalities, transposition controls, and font
+              scaling to suit live performance needs. Users can import personal
+              songs locally or through the cloud, and even submit entries for
+              administrative approval with detailed notes.
+            </p>
+            <ul>
+              <li>
+                Implemented real-time transposing and chord formatting for
+                songs.
+              </li>
+              <li>
+                Integrated cloud and local storage with Firebase for persistent
+                song data.
+              </li>
+              <li>
+                Built submission workflows for personal song uploads with admin
+                review, notes, and approval/rejection logic.
+              </li>
+              <li>
+                Included global vs. private song toggles, fullscreen lyric
+                views, and dynamic font controls.
+              </li>
+              <li>
+                Designed a responsive UI suitable for both desktop and mobile
+                musicians.
+              </li>
+            </ul>
+            <p>
+              This project highlights my capabilities in music-focused web app
+              design, cloud integration, real-time UI controls, and
+              administrative content management features.
             </p>
           </div>
         </div>
